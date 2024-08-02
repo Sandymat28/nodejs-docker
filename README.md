@@ -1,11 +1,11 @@
 ### Comment créer une image Docker pour l'application Node JS [2 étapes]
 
-## Installer Node JS et NPM sur Ubuntu
+##d'abor Installer Node JS et NPM sur Ubuntu
 
 ## Étape 1 : création d'une application Node.js
 Créons le répertoire nommé nodejsdocker pour ajouter des fichiers node js à tester.
 
-sudo mkdir nodejsdocker
+$ sudo mkdir nodejsdocker
 cd nodejsdocker
 
 Créez le fichier package.json dans lequel vous spécifierez toutes les dépendances de votre application Node JS
