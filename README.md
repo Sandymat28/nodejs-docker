@@ -5,12 +5,12 @@
 ## Étape 1 : création d'une application Node.js
 Créons le répertoire nommé nodejsdocker pour ajouter des fichiers node js à tester.
 
-$ sudo mkdir nodejsdocker
-$ cd nodejsdocker
+`# sudo mkdir nodejsdocker`
+`# cd nodejsdocker`
 
 Créez le fichier package.json dans lequel vous spécifierez toutes les dépendances de votre application Node JS
 
-$ sudo nano paquet.json
+`# sudo nano paquet.json`
 
 ![image](https://github.com/user-attachments/assets/4ff1d1ff-7415-4d72-87cd-3d2ca21a8b8a)
 
@@ -30,7 +30,7 @@ $ sudo nano paquet.json
 
 Créez ensuite la page server.js pour tester l'application Node JS avec le framework express
 
-$ sudo nano server.js
+`# sudo nano server.js`
 
 ![image](https://github.com/user-attachments/assets/11e34d15-c48a-4422-a2f4-72336009f69a)
 
@@ -66,28 +66,28 @@ console.log(`Running on http://${HOST}:${PORT}`);
 
 Créez ensuite le Dockerfile avec la commande ci-dessous dans le répertoire racine du projet
 
-$ sudo nano Dockerfile
+`# sudo nano Dockerfile`
 
 Créez maintenant l'image Docker à l'aide de la commande ci-dessous
 
-$ sudo docker build -t nodejsdocker .
+`# sudo docker build -t nodejsdocker .`
 
 une fois la construction réussie, vous pouvez voir la liste des images  Docker à l'aide de la commande ci-dessous
 
-$ docker images
+`# docker images`
 
 Nous avons couvert comment créer une image  Docker pour l'application Node JS.
 
 
 Exécutez le conteneur Docker, -p est utilisé pour mapper le port public au port interne du conteneur Docker. Ici, j'utilise le même port pour les deux.
 
-$ docker run -p 3000:3000 nodejsdocker
+`# docker run -p 3000:3000 nodejsdocker`
 ou
-$ docker run -d  -p 3000:3000 nodejsdocker
+`# docker run -d  -p 3000:3000 nodejsdocker`
 
-$ docker login 
+`# docker login` 
 
-$ docker tag nodejsdocker emmanuel236/nodejsdocker
+`# docker tag nodejsdocker emmanuel236/nodejsdocker`
 
 $ docker push emmanuel236/nodejsdocker
 
