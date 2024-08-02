@@ -16,7 +16,7 @@ $ sudo nano paquet.json
 
 
 {
-  "name": "Docker_NodeJS_App",
+  "name": "Docker_NodeJS_App", 
   "version": "0.1",
   "description": "Node.js Application with Docker",
   "main": "server.js",
@@ -31,6 +31,9 @@ $ sudo nano paquet.json
 Créez ensuite la page server.js pour tester l'application Node JS avec le framework express
 
 $ sudo nano server.js
+
+![image](https://github.com/user-attachments/assets/11e34d15-c48a-4422-a2f4-72336009f69a)
+
 
 'use strict';
 
