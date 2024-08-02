@@ -12,6 +12,9 @@ Créez le fichier package.json dans lequel vous spécifierez toutes les dépenda
 
 $ sudo nano paquet.json
 
+![image](https://github.com/user-attachments/assets/4ff1d1ff-7415-4d72-87cd-3d2ca21a8b8a)
+
+
 {
   "name": "Docker_NodeJS_App",
   "version": "0.1",
